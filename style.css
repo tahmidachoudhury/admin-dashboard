@@ -112,8 +112,8 @@ ul{
 .logistics-cards{
     grid-column: 1/-1;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 1.5rem;    
     padding-top: 1.5rem;
 }
 
