@@ -2,32 +2,42 @@
     margin: 0;
 }
 
+body{
+    font-family: "Mulish", "Poppins", sans-serif;
+}
+
 .container{
     display: grid;
+    position: relative;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: auto auto;
 }
+
+/*---------------------------------------------------------------sidebar*/
 
 .sidebar{
     grid-column: 1 / 2;
     grid-row: 1 / -1;
     background-color: beige;
-}
-
-.header{
-    background-color: rgb(206, 204, 204);
-    grid-column: 2/-1;
     display: flex;
-    justify-content: space-between;
-    padding: 0 1.5rem;
+    flex-direction: column;
 }
 
-.menu p{
-    margin: 0;
+.logo-container{
+    display: flex;
+    padding: 1rem;
+    position: relative;
 }
 
-li{
+.logo-name{
+    font-family: 'Abril Fatface', serif;
+    font-size: 2.5rem;
+}
+
+.sidebar-nav > ul > li{
     list-style-type: none;
+    padding: 1.1rem;
+    font-weight: 400;
 }
 
 ul{
@@ -38,9 +48,28 @@ ul{
 .sidebar-nav{
     display: flex;
     flex-direction: column;
-    /*fix this*/
     justify-content: space-between;
+    height: 100%;
 }
+
+/*-------------------------------------------------------------header*/
+.header{
+    background-color: rgb(206, 204, 204);
+    grid-column: 2/-1;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+
+.menu > ul > li{
+    list-style-type: none;
+}
+
+.menu p{
+    margin: 0;
+}
+
+
 
 .main{
     background-color: rgb(206, 204, 204);
