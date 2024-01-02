@@ -1,19 +1,19 @@
 /*variables*/
 :root{
-    --background-colour: #588157;
+    --background-colour: #c2c5aa;
     --hover-bg-colour: #414833;
-    --border-colour1: #3a5a40;
-    --border-colour2: #3a5a40;
-    --sidebar-colour: #3a5a40;
-    --subject-colour: #a3b18a;
+    --border-colour1: #333d29;
+    --border-colour2: #333d29;
+    --sidebar-colour: #656d4a;
+    --subject-colour: #a4ac86;
     --card-colour: #a3b18a;
     --font-colour1: black;
     --font-colour2: ;
     --icon-colour: #dad7cd;
     --sidebar-text: #dad7cd;
     --logo: #0d1b2a;
-    --feedback-chart-colour: #344e41;
-    --feedback-breakdown: #a3b18a;
+    --feedback-chart-colour: #a68a64;
+    --feedback-breakdown: #b6ad90;
 }
 
 *{
