@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a30f267665.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -16,11 +17,11 @@
             <div class="page-title">Overview</div>
             <div class="menu">
                 <ul>
-                    <li class="magnifying-glass"></li>
-                    <li class="bell"></li>
+                    <li class="magnifying-glass"><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li class="bell"><i class="fa-regular fa-bell"></i></li>
                 </ul>
                 <p class="name">Tahmid Choudhury</p>
-                <div class="user-img"></div>
+                <div class="user-img"><i class="fa-regular fa-circle-user"></i></div>
             </div>
         </div>
 
@@ -31,33 +32,33 @@
             </div>
             <div class="sidebar-nav">
                 <ul>
-                    <li>
+                    <li class="element">
                         <i class="fa-solid fa-chart-pie"></i>
                         <p>Overview</p>
                     </li>
-                    <li>
+                    <li class="element">
                         <i class="fa-solid fa-users-line"></i>
                         <p>Classes</p>
                     </li>
-                    <li>
+                    <li class="element">
                         <i class="fa-solid fa-chalkboard-user"></i>
                         <p>Tutors</p>
                     </li>
-                    <li>
+                    <li class="element">
                         <i class="fa-solid fa-chart-bar"></i></i>
                         <p>Finances</p>
                     </li>
-                    <li>
+                    <li class="element">
                         <i class="fa-solid fa-book"></i>
                         <p>Courses</p>
                     </li>
                 </ul>
                 <ul>
-                    <li>
+                    <li class="element">
                         <i class="fa-solid fa-sliders"></i>
                         <p>Settings</p>
                     </li>
-                    <li>
+                    <li class="element">
                         <i class="fa-solid fa-bars"></i>
                         <p>Subscription</p>
                     </li>
@@ -67,20 +68,35 @@
 
         <div class="main">
             <div class="courses">
-                <div class="maths"></div>
-                <div class="gen-science"></div>
-                <div class="sep-science"></div>
-                <div class="eng"></div>
+                <div class="maths graph">
+                    <p>GCSE Maths</p>
+                    <svg viewBox="0 0 2000 1000" xmlns="http://www.w3.org/2000/svg"><path d="m0 998.82 167-76.654 167-46.702 167-97.262 167 25.357 167-211.792 167-2.644 167-65.45 167 6.561 167 32.944 167-207.497 167-178.487 167 302.17-4 520.636H0Z" fill="#344e411a"/><path d="m0 998.82 167-76.654 167-46.702 167-97.262 167 25.357 167-211.792 167-2.644 167-65.45 167 6.561 167 32.944 167-207.497 167-178.487 167 302.17" fill="none" stroke="#344e41" stroke-width="8"/><g fill="#344e41"><circle cy="998.82" r="14"/><circle cx="167" cy="922.166" r="14"/><circle cx="334" cy="875.464" r="14"/><circle cx="501" cy="778.202" r="14"/><circle cx="668" cy="803.559" r="14"/><circle cx="835" cy="591.767" r="14"/><circle cx="1002" cy="589.123" r="14"/><circle cx="1169" cy="523.673" r="14"/><circle cx="1336" cy="530.234" r="14"/><circle cx="1503" cy="563.178" r="14"/><circle cx="1670" cy="355.681" r="14"/><circle cx="1837" cy="177.194" r="14"/><circle cx="2004" cy="479.363" r="14"/></g></svg>
+                </div>
+                <div class="gen-science graph">
+                    <p>GCSE General Science</p>
+                    <svg viewBox="0 0 2000 1000" xmlns="http://www.w3.org/2000/svg"><path d="m0 459.464 167-353.251 167 484.774 167-185.1 167-114.522 167 96.118 167-193.46 167 485.263 167-100.91 167-56.093 167-313.655 167 236.744 167-198.832-4 753.46H0Z" fill="#344e411a"/><path d="m0 459.464 167-353.251 167 484.774 167-185.1 167-114.522 167 96.118 167-193.46 167 485.263 167-100.91 167-56.093 167-313.655 167 236.744 167-198.832" fill="none" stroke="#344e41" stroke-width="8"/><g fill="#344e41"><circle cy="459.464" r="14"/><circle cx="167" cy="106.213" r="14"/><circle cx="334" cy="590.987" r="14"/><circle cx="501" cy="405.888" r="14"/><circle cx="668" cy="291.365" r="14"/><circle cx="835" cy="387.483" r="14"/><circle cx="1002" cy="194.024" r="14"/><circle cx="1169" cy="679.286" r="14"/><circle cx="1336" cy="578.376" r="14"/><circle cx="1503" cy="522.283" r="14"/><circle cx="1670" cy="208.628" r="14"/><circle cx="1837" cy="445.372" r="14"/><circle cx="2004" cy="246.54" r="14"/></g></svg>
+                </div>
+                <div class="sep-science graph">
+                    <p>GCSE Seperate Science</p>
+                    <svg viewBox="0 0 2000 1000" xmlns="http://www.w3.org/2000/svg"><path d="m0 989.225 167-71.465 167-42.825 167-10.108 167-89.55L835 655.18l167 8.309 167-188.797 167 10.362 167-7.458 167-21.875 167-318.745 167 96.39-4 766.635H0Z" fill="#344e411a"/><path d="m0 989.225 167-71.465 167-42.825 167-10.108 167-89.55L835 655.18l167 8.309 167-188.797 167 10.362 167-7.458 167-21.875 167-318.745 167 96.39" fill="none" stroke="#344e41" stroke-width="8"/><g fill="#344e41"><circle cy="989.225" r="14"/><circle cx="167" cy="917.76" r="14"/><circle cx="334" cy="874.935" r="14"/><circle cx="501" cy="864.827" r="14"/><circle cx="668" cy="775.277" r="14"/><circle cx="835" cy="655.179" r="14"/><circle cx="1002" cy="663.488" r="14"/><circle cx="1169" cy="474.691" r="14"/><circle cx="1336" cy="485.053" r="14"/><circle cx="1503" cy="477.595" r="14"/><circle cx="1670" cy="455.72" r="14"/><circle cx="1837" cy="136.975" r="14"/><circle cx="2004" cy="233.366" r="14"/></g></svg>
+                </div>
+                <div class="eng graph">
+                    <p>GCSE English</p>
+                    <svg viewBox="0 0 2000 1000" xmlns="http://www.w3.org/2000/svg"><path d="m0 25.311 167 36.388 167 55.026 167 77.202 167 97.177 167 118.67 167 68.915 167-85.505 167 132.58 167 178.805 167 48.144 167 70.083 167-261.242-4 438.446H0Z" fill="#344e411a"/><path d="m0 25.311 167 36.388 167 55.026 167 77.202 167 97.177 167 118.67 167 68.915 167-85.505 167 132.58 167 178.805 167 48.144 167 70.083 167-261.242" fill="none" stroke="#344e41" stroke-width="8"/><g fill="#344e41"><circle cy="25.311" r="14"/><circle cx="167" cy="61.699" r="14"/><circle cx="334" cy="116.725" r="14"/><circle cx="501" cy="193.927" r="14"/><circle cx="668" cy="291.104" r="14"/><circle cx="835" cy="409.774" r="14"/><circle cx="1002" cy="478.689" r="14"/><circle cx="1169" cy="393.184" r="14"/><circle cx="1336" cy="525.765" r="14"/><circle cx="1503" cy="704.569" r="14"/><circle cx="1670" cy="752.713" r="14"/><circle cx="1837" cy="822.796" r="14"/><circle cx="2004" cy="561.554" r="14"/></g></svg>
+                </div>
             </div>
 
             <div class="tutor-feedback">
-                <div class="tutor-fb-chart"></div>
+                <div class="tutor-fb-chart">
+                    <p class="fb-title">Tutor Feedback</p>
+                    <svg viewBox="0 0 2000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M0 1000h80v-8.442q0-4-4-4H4q-4 0-4 4ZM100 1000h80v-23.582q0-4-4-4h-72q-4 0-4 4ZM200 1000h80v-53.224q0-4-4-4h-72q-4 0-4 4ZM300 1000h80V864.028q0-4-4-4h-72q-4 0-4 4ZM400 1000h80V875.761q0-4-4-4h-72q-4 0-4 4ZM500 1000h80V780.76q0-4-4-4h-72q-4 0-4 4ZM600 1000h80V817.863q0-4-4-4h-72q-4 0-4 4ZM700 1000h80V725.69q0-4-4-4h-72q-4 0-4 4ZM800 1000h80V608.322q0-4-4-4h-72q-4 0-4 4ZM900 1000h80V599.333q0-4-4-4h-72q-4 0-4 4ZM1000 1000h80V484.17q0-4-4-4h-72q-4 0-4 4ZM1100 1000h80V476.444q0-4-4-4h-72q-4 0-4 4ZM1200 1000h80V663.268q0-4-4-4h-72q-4 0-4 4ZM1300 1000h80V389.717q0-4-4-4h-72q-4 0-4 4ZM1400 1000h80V486.109q0-4-4-4h-72q-4 0-4 4ZM1500 1000h80V306.523q0-4-4-4h-72q-4 0-4 4ZM1600 1000h80V225.483q0-4-4-4h-72q-4 0-4 4ZM1700 1000h80V311.863q0-4-4-4h-72q-4 0-4 4ZM1800 1000h80V398.488q0-4-4-4h-72q-4 0-4 4ZM1900 1000h80V226.71q0-4-4-4h-72q-4 0-4 4Z" fill="#344e41"/></svg>
+                </div>
                 <div class="breakdown">
-                    <div>
+                    <div class="child1">
                         <p>Positive Feedback</p>
                         <p>56</p>
                     </div>
-                    <div>
+                    <div class="child2">
                         <p>Negative Feedback</p>
                         <p>8</p>
                     </div>
@@ -100,15 +116,15 @@
                         </div>
                         <p>Group: Support</p>
                     </div>
-                    <div class="card-item">
+                    <div class="card-item child1">
                         <p>Waiting on new uniform</p>
                         <p>11</p>
                     </div>
-                    <div class="card-item">
+                    <div class="card-item child2">
                         <p>New Kerboodle books to be ordered</p>
                         <p>6</p>
                     </div>
-                    <div class="card-item">
+                    <div class="card-item child3">
                         <p>Recorded lessons</p>
                         <p>74</p>
                     </div>
@@ -126,15 +142,15 @@
                         </div>
                         <p>Today</p>
                     </div>
-                    <div class="card-item">
+                    <div class="card-item child1">
                         <p>Waiting on new uniform</p>
                         <p>11</p>
                     </div>
-                    <div class="card-item">
+                    <div class="card-item child2">
                         <p>New Kerboodle books to be ordered</p>
                         <p>6</p>
                     </div>
-                    <div class="card-item">
+                    <div class="card-item child3">
                         <p>Recorded lessons</p>
                         <p>74</p>
                     </div>
